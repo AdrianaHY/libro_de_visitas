@@ -1,0 +1,24 @@
+body {
+  align: center;
+  background-color: #FFEFD5;
+}
+
+h1 {
+  font-family: "Optima";
+  font-size: 40px;
+}
+
+h2 , h3 {
+  font-family: "Futura";
+}
+
+input  {
+  background-color: #778899;
+  border-radius: 5px;
+  font-family: "Helvética";
+  color: white;
+  font-size: 13px;
+  width: 110px;
+  height:30px;
+  margin: 2px;
+}

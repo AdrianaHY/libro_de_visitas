@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Libro de visitas</title>
+    <link rel="stylesheet" type="text/css" href="assets/estilos.css">
   </head>
-  <body>
-    <h1>Libro de visitas</h1>
+  <body backgroundColor>
+    <h1 align = "center" font-family = "verdana" = "">Libro de visitas</h1>
     <section id="nuevosComentarios">
 
 			<ul>
@@ -18,7 +19,7 @@
 		</section>
 
     <form>
-      <h2>Agrega un comentario:</h2>
+      <h2 align = "left">Agrega un comentario:</h2>
       <div align = "left">
         <input type = "button" value = "Texto grande" onclick = "textoGrande()"/>
         <input type = "button" value = "Texto mediano" onclick = "textoMediano()"/>
@@ -29,13 +30,17 @@
         <input type = "button" value = "Centrar" onclick = "centrar()"/>
         <input type = "button" value = "Alinear Derecha" onclick = "alinearALaDerecha()"/>
       </div>
-      <textarea name = "message" rows = "10" cols = "108" id = "contenido" oninput = "vistaPrevia()" ></textarea>
+      <textarea align = "center" name = "message" rows = "10" cols = "125" id = "contenido" oninput = "vistaPrevia()" placeholder = "Escribe tu comentario..."></textarea>
       <hr>
-      <h3>Contenido:</h3>
+      <h3 align = "center">Contenido:</h3>
 
-      <p nombre = "vistaAnterior" id = "vistaAnterior" value = ""></p>
+      <p nombre = "vistaAnterior" id = "vistaAnterior" value = "" ></p>
       <hr>
+
+      <div align = "center">
       <input type = "button" value = "enviar" onclick = "publicarComentario()"/>
+      <input type = "button" value = "borrar" onclick = "borrarVista()"/>
+    </div>
     </form>
 
     <script src = "assets/js/visitas.js"></script>
