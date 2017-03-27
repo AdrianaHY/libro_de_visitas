@@ -9,6 +9,9 @@ function vistaPrevia(){
 
 comentarioModificado.innerHTML = mensaje.value;
 }
+//function crarPreview (input){
+//console.log(input)
+//} para html =  function(this.value) agarra el valor deseado del objeto
 
 //Para hacer el texto grande
 function textoGrande(){
@@ -86,6 +89,35 @@ function publicarComentario() {
 	document.getElementById("nuevosComentarios").value = "";
 
 	}
+
+function agregarImagen(){
+  var imagenAgregar = prompt("Inserta la url de tu imagen");
+  var imagen = document.createElement("img");
+  var preview = document.getElementById("vistaAnterior")
+  imagen.src = imagenAgregar;
+  vistaAnterior.appendChild(imagen);
+}
+
+function agregarLista(){
+  var numeroDeElementosEnLista = prompt("Indica el número de elementos:")
+  var nuevaLista = document.createElement("ol");
+
+
+  for(var i = 0; i < numeroDeElementosEnLista; i++){
+    var valorNuevoItem = prompt("Agrega tu item:");
+    var nuevoItem = document.createElement("li");
+    nuevoItem.innerText = valorNuevoItem;
+    nuevaLista.appendChild(nuevoItem);
+
+  }
+
+comentarioModificado.appendChild(nuevaLista);
+//No pude hacerlo porque le borré el id :(
+}
+
+function borrarComentario(){
+
+}
 
   function borrarVista(){
     comentarioModificado.innerHTML = "";
