@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Libro de visitas</title>
+  </head>
+  <body>
+    <h1>Libro de visitas</h1>
+    <section id="nuevosComentarios">
+
+			<ul>
+				<li type="none"  id="comentariosPublicados">
+					<div name="comentariosPublicados" style="border: 1px color: black"><hr width="800"  align="left"></div>
+
+				</li>
+
+			</ul>
+		</section>
+
+    <form>
+      <h2>Agrega un comentario:</h2>
+      <div align = "left">
+        <input type = "button" value = "Texto grande" onclick = "textoGrande()"/>
+        <input type = "button" value = "Texto mediano" onclick = "textoMediano()"/>
+        <input type = "button" value = "Texto chico" onclick = "textoChico()"/>
+        <input type = "button" value = "Color de texto" onclick = "cambioColorTexto()"/>
+        <input type = "button" value = "Color de fondo" onclick = "cambioColorFondo()"/>
+        <input type = "button" value = "Alinear izquierda" onclick = "alinearALaIzquierda()"/>
+        <input type = "button" value = "Centrar" onclick = "centrar()"/>
+        <input type = "button" value = "Alinear Derecha" onclick = "alinearALaDerecha()"/>
+      </div>
+      <textarea name = "message" rows = "10" cols = "108" id = "contenido" oninput = "vistaPrevia()" ></textarea>
+      <hr>
+      <h3>Contenido:</h3>
+
+      <p nombre = "vistaAnterior" id = "vistaAnterior" value = ""></p>
+      <hr>
+      <input type = "button" value = "enviar" onclick = "publicarComentario()"/>
+    </form>
+
+    <script src = "assets/js/visitas.js"></script>
+
+  </body>
+</html>
